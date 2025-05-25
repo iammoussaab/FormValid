@@ -41,13 +41,13 @@ pipeline {
 
     post {
         success {
-            mail to: 'dev@local.test',
+            mail to: 'mossabelmahraoui@gmail.com',
                  subject: '✔️ Build Succeeded - Formulaire Angular',
                  body: 'Le pipeline Jenkins a réussi.'
         }
 
         failure {
-            mail to: 'dev@local.test',
+            mail to: 'mossabelmahraoui@gmail.com',
                  subject: '❌ Build Failed - Formulaire Angular',
                  body: 'Le pipeline Jenkins a échoué.'
         }
