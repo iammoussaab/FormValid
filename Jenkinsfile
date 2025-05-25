@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('clone repository') {
 			steps {
-				git branch: 'main',
+				git branch: 'master',
 					url: 'https://github.com/iammoussaab/FormValid.git'
 			}
 		}
