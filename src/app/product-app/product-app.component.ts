@@ -22,9 +22,9 @@ export class ProductAppComponent {
   }
 
 
-  get f(): {[key : string]: AbstractControl}{
-    return this.productForm.controls;
-  }
+get f(): Record<string, AbstractControl> {
+  return this.productForm.controls;
+}
 
   get isPremuim() :boolean{
     return this.productForm .get("price")?.value > 1000;
