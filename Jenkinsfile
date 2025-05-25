@@ -22,7 +22,7 @@ pipeline {
 
         stage('Lint') {
             steps {
-                bat 'ng lint --fix'
+                bat 'npx run lint '
             }
         }
 
