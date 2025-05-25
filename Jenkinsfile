@@ -7,7 +7,14 @@ pipeline {
     }
 
     stages {
-        stage('Install dependencies') {
+        stage('clone repository') {
+			steps {
+				git branch: 'main',
+					url: 'https://github.com/iammoussaab/FormValid.git'
+			}
+		}
+
+		stage('Install dependencies') {
             steps {
                 bat 'npm install'
             }
