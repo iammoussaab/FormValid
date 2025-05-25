@@ -22,13 +22,13 @@ pipeline {
 
         stage('Lint') {
             steps {
-                bat 'npx ng lint'
+                bat 'ng lint'
             }
         }
 
         stage('Build Angular app') {
             steps {
-                bat 'npx ng build --configuration production'
+                bat 'ng build --configuration production'
             }
         }
 
