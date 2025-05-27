@@ -35,6 +35,7 @@ get f(): Record<string, AbstractControl> {
       }
       else{
         console.log('error lors de la creation de produits');
+        console.log(this.productForm.errors);
       }
   }
   onReset(): void{
